@@ -1,13 +1,16 @@
 variable "app-name" {
   description = "Name of the application"
+  type        = string
 }
 
 variable "app-docker-image-repo" {
   description = "URL to the app's docker image"
+  type        = string
 }
 
 variable "app-docker-image-tag" {
   description = "Name of docker image tag"
+  type        = string
 }
 
 variable "app-cpu" {
@@ -27,4 +30,5 @@ variable "app-environment-variables" {
 
 variable "app-ecs-cluster-name" {
   description = "Name of the ECS cluster to provision this ECS app in"
+  type        = string
 }

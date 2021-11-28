@@ -10,7 +10,7 @@ provider "aws" {
 }
 
 module "my-worker-app" {
-  source = "git::https://github.com/zahiar/terraform-aws-ecs-worker-app.git"
+  source = "zahiar/ecs-worker-app/aws"
 
   app-cpu = 1024
   app-docker-image-repo = "my-app/worker"
